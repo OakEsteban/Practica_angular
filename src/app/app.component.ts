@@ -9,5 +9,10 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'data-binding';
+  title = 'Tittle';
+
+  capitalizar():void {
+    this.title = this.title.charAt(0).toUpperCase()+
+    this.title.slice(1).toLowerCase();
+  }
 }
